@@ -1,3 +1,4 @@
+utils::globalVariables(c("MONTH", "STATE", "year"))
 #' Read .csv data file
 #'
 #' This function check for the existance of a given \code{filename}, and if the .csv file exist,
