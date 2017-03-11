@@ -42,7 +42,8 @@ Dependencies:
 * `dplyr::tbl_df`
 
 Examples:
-``` {r eval=FALSE}
+
+```r
 fars_read("filename.csv")
 fars_read("pathname/filename.csv")
 ```
@@ -62,7 +63,8 @@ Parameters:
 This function returns a character vector containing a formatted combination of text and year number.
 
 Examples:
-``` {r eval=FALSE}
+
+```r
 make_filename(2017)
 make_filename(4034/2)
 ```
@@ -90,7 +92,8 @@ Dependencies:
 * `dplyr::select`
 
 Examples:
-``` {r eval=FALSE}
+
+```r
 fars_read_years(2013)
 fars_read_years(2013:2015)
 ```
@@ -113,7 +116,8 @@ Dependencies:
 * `tidy::spread`
 
 Examples:
-``` {r eval=FALSE}
+
+```r
 fars_summarize_years(2013)
 fars_summarize_years(2013:2015)
 ```
@@ -142,7 +146,8 @@ Dependencies:
 * `graphics::points`
 
 Examples:
-``` {r eval=FALSE}
+
+```r
 fars_map_state(23, 2013)
 ```
 

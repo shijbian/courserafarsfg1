@@ -1,11 +1,15 @@
-Package: courserafarsfg1
-Title: US Traffic Fatality Data And Map
+Package: fars1
+Type: Package
+Title: Read And Plot Map Of US Traffic Fatalities
 Version: 0.1.0
-Date: 2017-03-11
-Imports: dplyr, tidyr, maps, graphics, readr, testthat
-Author: student <frenk.giorgetti@gmail.com>
-Maintainer: student <frenk.giorgetti@gmail.com>
-Description: A set of function for reading and plotting traffic fatality data.
-License: GPL (>= 2)
+Author: Francesco Giorgetti
+Maintainer: Francesco Giorgetti <mail@example.net>
+Description: This functions will be using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+License: GPL
+Encoding: UTF-8
+LazyData: true
 RoxygenNote: 6.0.1
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

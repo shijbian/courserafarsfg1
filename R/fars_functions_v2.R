@@ -1,4 +1,3 @@
-#' -----------------------------------------------------------------------------------------------
 #' Read .csv data file
 #'
 #' This function check for the existance of a given \code{filename}, and if the .csv file exist,
@@ -16,6 +15,10 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
+#' \dontrun{
+#' fars_read("filename.csv")
+#' fars_read("pathname/filename.csv")
+#' }
 #'
 #' @export
 fars_read <- function(filename) {
@@ -27,7 +30,7 @@ fars_read <- function(filename) {
   dplyr::tbl_df(data)
 }
 
-#' -----------------------------------------------------------------------------------------------
+
 #' Print filename for a given year
 #'
 #' This function print a character vector with the filename combining the default
@@ -38,8 +41,10 @@ fars_read <- function(filename) {
 #' @return This function returns a character vector containing a formatted combination of text and year number.
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2017)
 #' make_filename(4034/2)
+#' }
 #'
 #' @export
 make_filename <- function(year) {
@@ -47,7 +52,7 @@ make_filename <- function(year) {
   sprintf("accident_%d.csv.bz2", year)
 }
 
-#' -----------------------------------------------------------------------------------------------
+
 #' Read multiple .csv data file for a series a provided years
 #'
 #' This function take as input a vector of integers (\code{years}) representig years, make the
@@ -64,6 +69,10 @@ make_filename <- function(year) {
 #' @importFrom dplyr select
 #'
 #' @examples
+#' \dontrun{
+#' fars_read_years(2013)
+#' fars_read_years(2013:2015)
+#' }
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -80,7 +89,7 @@ fars_read_years <- function(years) {
   })
 }
 
-#' -----------------------------------------------------------------------------------------------
+
 #' Summarize records per month for a series a provided years
 #'
 #' This function takes a series of years (\code{years}) as input and returns a tibble with
@@ -92,6 +101,10 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
+#' \dontrun{
+#' fars_summarize_years(2013)
+#' fars_summarize_years(2013:2015)
+#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -102,7 +115,7 @@ fars_summarize_years <- function(years) {
     tidyr::spread(year, n)
 }
 
-#' -----------------------------------------------------------------------------------------------
+
 #' Plot a map with all accidents in a given State in a given year
 #'
 #' This function takes a State number (\code{state.num}) indicator and a year (\code{year}),
@@ -123,6 +136,9 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
+#' \dontrun{
+#' fars_map_state(23, 2013)
+#' }
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
