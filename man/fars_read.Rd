@@ -24,7 +24,5 @@ If the \code{filename} you provide does not existe, the function stops and retur
 read_csv is evaluated in a context that ignores all ‘simple’ diagnostic messages. See: \code{\link{message}}
 }
 \examples{
-fars_read("filename.csv")
-fars_read("pathname/filename.csv")
 
 }
