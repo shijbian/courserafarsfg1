@@ -65,8 +65,7 @@ make_filename <- function(year) {
 #' @return This function returns a dataframe with 2 columns for each year, representing
 #' month number and year of each recorded data
 #'
-#' @importFrom dplyr mutate
-#' @importFrom dplyr select
+#' @importFrom dplyr mutate select %>%
 #'
 #' @examples
 #' \dontrun{
