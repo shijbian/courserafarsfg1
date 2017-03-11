@@ -1,0 +1,11 @@
+Package: courserafarsfg1
+Title: US Traffic Fatality Data And Map
+Version: 0.1.0
+Date: 2017-03-11
+Imports: dplyr, tidyr, maps, graphics, readr, testthat
+Author: student <frenk.giorgetti@gmail.com>
+Maintainer: student <frenk.giorgetti@gmail.com>
+Description: A set of function for reading and plotting traffic fatality data.
+License: GPL (>= 2)
+RoxygenNote: 6.0.1
+Suggests: testthat
