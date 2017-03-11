@@ -5,7 +5,7 @@ date: "3/11/2017"
 output: html_document
 ---
 
-[![Travis-CI Build Status](https://travis-ci.org/frenkg/fars1.svg?branch=master)](https://travis-ci.org/frenkg/fars1)
+[![Travis-CI Build Status](https://travis-ci.org/frenkg/courserafarsfg1.svg?branch=master)](https://travis-ci.org/frenkg/courserafarsfg1)
 
 
 
